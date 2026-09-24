@@ -1,22 +1,31 @@
 #include <iostream>
-#include <stack>
+#include <string>
+
 using namespace std;
 
-int main() {
-    string kata;
-    stack<char> s;
+#define MAX 100
 
-    cout << "Masukkan kata : ";
+char stack[MAX];
+int top = -1;
+
+// TODO : Menambahkan karakter ke stack
+void push(char value) {}
+
+// TODO : Mengambil karakter paling atas
+char pop() {}
+
+int main() {
+
+    string kata;
+
+    cout << "Masukkan sebuah kata: ";
     cin >> kata;
 
-    for (char c : kata)
-        s.push(c);
+    // TODO : Memasukkan setiap karakter ke stack
 
-    cout << "Hasil: ";
-    while (!s.empty()) {
-        cout << s.top();
-        s.pop();
-    }
+    // TODO Mengeluarkan karakter dari stack
+    
+    cout << endl;
 
     return 0;
 }
